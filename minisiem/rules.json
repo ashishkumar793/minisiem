@@ -1,0 +1,19 @@
+{
+  "default_year": 2026,
+  "dedupe_minutes": 30,
+  "blocklist_file": "blocklist.txt",
+  "geo_file": "geo.json",
+  "rules": {
+    "brute_force": {"threshold": 5, "window_minutes": 5},
+    "password_spray": {"threshold": 5, "window_minutes": 10},
+    "success_after_failures": {"threshold": 5, "window_minutes": 10},
+    "off_hours_login": {"start_hour": 8, "end_hour": 19, "ignore_users": []},
+    "impossible_travel": {"min_hours": 2},
+    "web_scan": {"threshold": 15, "window_minutes": 2},
+    "web_attack": {},
+    "bad_user_agent": {},
+    "blocklisted_ip": {},
+    "account_created": {},
+    "account_lockout": {"severity": "LOW"}
+  }
+}
